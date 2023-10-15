@@ -40,10 +40,4 @@ new_data = pd.read_csv(r"new_data.csv")
 # Make predictions on the new data
 new_data_predictions = rf_classifier.predict(new_data)
 
-if __name__ == "__main__":
-    try:
-        data = json.loads(sys.stdin.read())
-        result = new_data_predictions
-        print(json.dumps({"result": result}))
-    except Exception as e:
-        print(json.dumps({"error": str(e)})
+print(new_data_predictions)
