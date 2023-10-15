@@ -4,10 +4,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
 # Load the fraudulent dataset
-fraudulent_data = pd.read_csv(r"C:\Users\Miru\OneDrive\Desktop\FraudDetection\dataset\fraudulent_data.csv")
+fraudulent_data = pd.read_csv(r"fraudulent_data.csv")
 
 # Load the legitimate dataset
-legitimate_data = pd.read_csv(r"C:\Users\Miru\OneDrive\Desktop\FraudDetection\dataset\legitimate_data.csv")
+legitimate_data = pd.read_csv(r"legitimate_data.csv")
 
 # Combine both datasets
 combined_data = pd.concat([fraudulent_data, legitimate_data], ignore_index=True)
@@ -33,7 +33,7 @@ print(f'Accuracy: {accuracy:.2f}')
 print(classification_report(y_test, y_pred))
 
 # Load new data for predictions
-new_data = pd.read_csv(r"C:\Users\Miru\OneDrive\Desktop\FraudDetection\dataset\new_data.csv")
+new_data = pd.read_csv(r"new_data.csv")
 
 
 
