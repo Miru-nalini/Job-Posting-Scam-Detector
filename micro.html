@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancing Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2eccf; /* Pastel background color */
+        }
+        header {
+            background-color: #9dcbab; /* Pastel header color */
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            margin: 0;
+            padding: 10px;
+        }
+        .header-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+        }
+        .header-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .search-form {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .search-form input {
+            padding: 10px;
+            width: 200px;
+            margin-right: 10px;
+        }
+        .search-form button {
+            background-color: #9dcbab; /* Pastel button color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .sub-header {
+            background-color: #9dcbab; /* Pastel sub-header color */
+            color: #fff;
+            padding: 10px 0;
+            
+        }
+        .fields {
+            text-align: center;
+        }
+        .fields label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .footer {
+            background-color: #9dcbab; /* Pastel footer color */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .footer-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #9dcbab; /* Pastel button color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button.apply-button {
+            background-color: #7bb36a; /* Pastel apply button color */
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Freelancing Platform</h1>
+        <div class="header-links">
+            <a href="login.php">Login</a>
+            <a href="signup.php">Sign Up</a>
+        </div>
+    </header>
+    
+    <div class="search-form">
+        <input type="text" placeholder="Service You Are Looking For">
+        <input type="text" placeholder="Location">
+        <button type="submit">Submit</button>
+    </div>
+
+    <div class="sub-header">
+        <div class="fields">
+            <label for="graphicDesign">Graphic Design</label>
+            <label for="programmingTech">Programming & Tech</label>
+            <label for="videoAnimation">Video & Animation</label>
+            <label for="digitalMarketing">Digital Marketing</label>
+            <label for="writingTranslation">Writing & Translation</label>
+        </div>
+    </div>
+
+    <main>
+        <section id="job-listings">
+            <h2>Job Listings</h2>
+            <ul>
+                <li>
+                    <h3>Data Entry</h3>
+                    <p><strong>Budget:</strong> $250-750 USD</p>
+                    <p>We are looking for a Data Entry Operator to update and maintain information on our company databases and computer systems.</p>
+                    <a href="dataentry.html"><button class="apply-button">Apply</button></a>
+                   
+                </li>
+                
+    
+                </li>
+               
+
+                <li>
+                    <h3>Simple Urgent English Typing Job</h3>
+                    <p><strong>Budget:</strong> $750-1500 USD</p>
+                    <p>I am in need of a freelancer who can help me with a simple urgent English typing job. The job needs to be completed within 48 hours.</p>
+                    <a href="Typing.html"><button class="apply-button">Apply</button></a>
+                </li>
+                <li> 
+                    <h3><h3>Content Writer</h3>
+                    <p><strong>Budget:</strong> $750-1500 USD</p>
+                    <p>I am in need of a Experienced content writer who can help me with a writting content for novels. The job needs to be completed within 1 month.</p>
+                <a href="details.html"><button class="apply-button">Apply</button></a>
+                </li>
+                <li> 
+                    <h3><h3>Need a writer</h3>
+                    <p><strong>Budget:</strong> $21-262 USD</p>
+                    <p>I am looking for a writer who can help me with various writing projects. The ideal candidate should have experience in one or more of the following areas.</p>
+                <a href="details.html"><button class="apply-button">Apply</button></a>
+                </li>
+                
+                
+                <!-- Iterate through more job listings from the database -->
+            </ul>
+        
+        </section>
+    </main>
+<footer class="footer">
+        <div class="footer-links">
+            <a href="#">Contact Us</a>
+            <a href="#">Instagram</a>
+            <a href="#">Email</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,2 @@
+minPay(USD per hour),maxPay(USD per hour),clientIdentityVerification,clientPaymentVerification,deposit,emailVerification,profileCompletion,phoneVerification
+50,1,0,1,0,0,0,0

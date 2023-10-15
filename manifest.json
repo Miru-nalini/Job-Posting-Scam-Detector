@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "FraudDetection",
+    "version": "1.0",
+    "description": "Protects you from scams on freelancing platforms.",
+    "path": "path/to/your/python/script.py",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://your_extension_id/"
+  ],
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "browser_action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": {
+        
+      }
+    },
+    "icons": {
+      "48": "images/icon48.png",
+        "96": "images/icon96.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*//localhost*"],
+          "js": ["content/content.js"]
+        }
+      ]
+      ,
+    "background": {
+      "scripts": ["background/background.js"],
+      "persistent": false
+    },
+    "web_accessible_resources": ["popup/popup.html"],
+    "permissions": ["activeTab","storage"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  }
+  

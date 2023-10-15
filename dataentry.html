@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataEntry Job</title>
+  <style>
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2eccf;
+background-color: #f2eccf; /* Pastel background color */
+        }
+        header {
+            background-color: #9dcbab; /* Pastel header color */
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#detailsContent {
+  padding-left: 20px;
+}
+
+#detailsContent h3 {
+  margin-top: 20px;
+}
+
+#detailsContent h3 + p {
+  margin-top: 10px;
+}
+
+#detailsContent h3 + ul {
+  margin-top: 10px;
+}
+
+#detailsContent ul li {
+  list-style-type: square;
+}
+button {
+            background-color: #9dcbab; /* Pastel button color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button.apply-button {
+            background-color: #7bb36a; /* Pastel apply button color */
+        }
+
+/* Optional: Add your custom styling for links, buttons, etc. */
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Data Entry</h1>
+    <div id="projectDetails">
+       <div class="jobTitle">
+      <h2>Project Title</h2>
+      <p>Data Entry</p>
+       </div>
+       <div class="jobDescription">
+      <h2>Description</h2>
+      <p>We need a data entry specialist kindly send me a message via telegram…..@kevinfreelancejobs</p>
+    </div>
+   
+      <h2>Budget</h2>
+      <div class="minPay">
+      <p>Minimum Payment:$15 </p>
+      </div>
+      <div class="maxPay">
+      <p>Maximum Payment:$25</p>
+      </div>
+      <h2>Details</h2>
+      <div id="detailsContent">
+        <p>The content should be persuasive, informative, and SEO-friendly. It should effectively communicate our brand's message and offerings</p>
+        
+        <h3>Preferred Writing Style or Tone</h3>
+        <p>Professional and engaging with a conversational tone </p>
+
+        <h3>Frequency of New Content</h3>
+        <p>Regular updates and communication are essential. We expect weekly progress reports and frequent meetings to discuss project status and updates.</p>
+
+        <h3>Ideal Skills and Experience</h3>
+        <ul>
+          <li>Strong writing skills, SEO knowledge, familiarity with our industry</li>
+          <li> Proven experience in copywriting and content creation for websites</li>
+          <li>Integration with payment gateways</li>
+          <li>Previous experience with content writing is a plus</li>
+        </ul>
+
+        <h3>Bidding Date and Time</h3>
+        <p>Bidding closes on October 30, 2023, at 5:00 PM (GMT).</p>
+
+        <h3>Client Information</h3>
+        <ul>
+          <li>Name: XCompany</li>
+          <div class="clientLocation">
+          <li>Location:Tokyo,Japan</li></div>
+          <li>Contact: +917516616822</li>
+        </ul>
+
+        <h3>Client Engagement</h3>
+        <p>We expect open communication, regular updates, and prompt responses to our queries. Timely completion of milestones and adherence to the project timeline is crucial.</p>
+        <div class="clientMembership">
+            <p>Client Member:10-14-2023</p></div>
+        </div>
+        <h3>Client Verification</h3>
+        <ul>
+            <div class="clientIdentityVerification">
+          <li>Identity Verified: No</li></div>
+          <div class="clientPaymentVerification">
+          <li>Payment Verified:Yes</li></div>
+          <div class="deposit">
+          <li>Deposit Made: No</li></div>
+          <div class="emailVerification">
+          <li>Email Verified: Yes</li></div>
+          <div class="profileCompletion">
+          <li>Profile Completed: No</li></div>
+          <div class="phoneVerification">
+          <li>Phone Verification: No</li></div>
+        </ul>
+        <button class="apply-button">Apply</button></a>
+                </li>
+      </div>
+    </div>
+  </div>
+  <script>
+    const projectDetailsContainer = document.getElementById("projectDetails");
+const jobDiv = document.createElement("div");
+jobDiv.classList.add("job-details");
+
+const jobTitle = document.createElement("h2");
+jobTitle.innerText = foodDeliveryProject.title;
+
+const jobDescription = document.createElement("p");
+jobDescription.innerText = foodDeliveryProject.description;
+
+const jobBudget = document.createElement("p");
+jobBudget.innerText = `Budget: ${foodDeliveryProject.budget}`;
+
+const jobDetails = document.createElement("div");
+jobDetails.classList.add("job-info");
+jobDetails.innerHTML = foodDeliveryProject.details;
+
+jobDiv.appendChild(jobTitle);
+jobDiv.appendChild(jobDescription);
+jobDiv.appendChild(jobBudget);
+jobDiv.appendChild(jobDetails);
+
+projectDetailsContainer.appendChild(jobDiv);
+  </script>
+</body>
+</html>
